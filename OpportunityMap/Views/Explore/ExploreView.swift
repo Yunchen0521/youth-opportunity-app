@@ -22,9 +22,9 @@ struct ExploreView: View {
         guard profile.hasCriteria else {
             return base.map { RankedOpportunity(opportunity: $0, match: nil) }
         }
-        let ranked = base.map {
-            RankedOpportunity(opportunity: $0, match: MatchEngine.evaluate($0, for: profile))
-        }
+        let ranked = base
+            .map { RankedOpportunity(opportunity: $0, match: MatchEngine.evaluate($0, for: profile)) }
+            .filter { $0.match?.isEligible ?? true }   // 不符資格的不顯示在探索列表
         // 「依適配度排序」開啟時才重排；否則維持原順序、只顯示徽章。
         guard sortByFit else { return ranked }
         return ranked.sorted { lhs, rhs in
@@ -109,6 +109,24 @@ struct ExploreView: View {
         .listStyle(.plain)
         .environment(\.defaultMinListRowHeight, 0)   // 讓「N 個機會」短列縮到內容高度，不被最小列高撐開
         .refreshable { await store.loadRemoteThenFallback() }
+        .overlay { SearchDimOverlay(searchTextEmpty: store.searchText.isEmpty) }
+    }
+
+    /// 搜尋聚焦且尚未輸入時，在清單上疊一層半透明灰（表示「搜尋中」）。
+    /// 讀 `\.isSearching` 需在 searchable 的子層，故獨立成 subview。
+    private struct SearchDimOverlay: View {
+        let searchTextEmpty: Bool
+        @Environment(\.isSearching) private var isSearching
+
+        var body: some View {
+            if isSearching && searchTextEmpty {
+                Rectangle()
+                    .fill(.black.opacity(0.12))
+                    .ignoresSafeArea()
+                    .allowsHitTesting(false)   // 純視覺遮罩，不擋捲動/點擊
+                    .transition(.opacity)
+            }
+        }
     }
 
     private var recommendToggle: some View {
@@ -156,32 +174,25 @@ struct OpportunityRow: View {
     var matchLevel: MatchLevel? = nil
 
     var body: some View {
-        HStack(spacing: 12) {
-            Image(systemName: opportunity.category.symbolName)
-                .font(.title3)
-                .frame(width: 40, height: 40)
-                .background(Color.accentColor.opacity(0.12), in: RoundedRectangle(cornerRadius: 10))
-                .foregroundStyle(Color.accentColor)
-
-            VStack(alignment: .leading, spacing: 6) {
-                Text(opportunity.title)
-                    .font(.headline)
-                    .lineLimit(2)
-                Text(opportunity.organizer)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
-                HStack(spacing: 6) {
-                    if let matchLevel {
-                        MatchBadge(level: matchLevel)
-                    }
-                    TagChip(text: opportunity.category.displayName, accent: true)
-                    TagChip(text: opportunity.sourceType.displayName)
-                    Spacer(minLength: 0)
+        VStack(alignment: .leading, spacing: 10) {
+            Text(opportunity.title)
+                .font(.headline)
+                .lineLimit(2)
+            Text(opportunity.organizer)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+            HStack(spacing: 6) {
+                if let matchLevel {
+                    MatchBadge(level: matchLevel)
                 }
+                TagChip(text: opportunity.category.displayName, accent: true)
+                TagChip(text: opportunity.sourceType.displayName)
+                Spacer(minLength: 0)
             }
         }
-        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 12)
     }
 }
 
