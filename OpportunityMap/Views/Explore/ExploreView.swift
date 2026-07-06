@@ -38,6 +38,7 @@ struct ExploreView: View {
         @Bindable var store = store
         NavigationStack {
             
+            
             Group {
                 if store.isLoading {
                     ProgressView("載入中…")

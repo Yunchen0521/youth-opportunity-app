@@ -4,8 +4,8 @@ import Foundation
 /// v1：先讀 App bundle 內的 opportunities.json（離線可用）。
 /// 之後資料上傳到 GitHub 後，呼叫 `loadRemote()` 即可切換成遠端，介面不變。
 struct OpportunityService {
-    /// 資料上傳到此 repo 後，遠端抓取即生效。
-    static let remoteURL = URL(string: "https://raw.githubusercontent.com/Yunchen0521/opportunity-youth/main/opportunities.json")!
+    /// 遠端資料：直接讀本專案 repo 裡的 data/opportunities.json（單一 repo，程式與資料同處）。
+    static let remoteURL = URL(string: "https://raw.githubusercontent.com/Yunchen0521/youth-opportunity-app/main/data/opportunities.json")!
 
     enum ServiceError: LocalizedError {
         case bundleResourceMissing
