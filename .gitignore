@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Xcode / Swift 建置產物（不進版本控制）
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+.swiftpm/
+
+# Python（pipeline）
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Cloudflare（backend）
+node_modules/
+.wrangler/
+.dev.vars
+
+# 環境變數 / 祕密（絕對不要 commit 金鑰）
+.env
+*.local
+.claude/settings.local.json

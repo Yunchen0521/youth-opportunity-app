@@ -1,0 +1,80 @@
+{
+  "version": "pipeline-proto",
+  "updatedAt": "2026-07-06",
+  "note": "管線示範產出：台灣就業通 投資青年就業方案（去重後 3 筆新資料）",
+  "opportunities": [
+    {
+      "id": "mol-youth-good-review",
+      "title": "青年職得好評計畫",
+      "category": "subsidy",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "投資青年就業方案下的計畫之一，協助青年順利就業並提供相關獎勵。詳細資格與金額以官網最新公告為準。",
+      "description": "勞動部「投資青年就業方案」推動之青年就業支持計畫，鼓勵並協助青年進入職場、穩定就業。申請資格、獎勵內容與期程以台灣就業通官網最新公告為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.taiwanjobs.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "mol-college-pre-hire",
+      "title": "大專青年預聘計畫",
+      "category": "internship",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "媒合大專在校或應屆青年與企業，讓企業提早預聘、青年及早接軌就業。細節以官網最新公告為準。",
+      "description": "勞動部「投資青年就業方案」下的媒合型計畫，促成企業與大專青年提早建立聘僱關係，縮短學用落差。適用對象、補助與流程以台灣就業通官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.taiwanjobs.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "mol-micro-startup-loan",
+      "title": "微型創業貸款利息補貼及創業協助",
+      "category": "startup",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "提供有創業意願之青年貸款利息補貼與創業諮詢輔導。詳細額度與條件以官網最新公告為準。",
+      "description": "勞動部針對有意創業之青年提供貸款利息補貼與創業陪伴輔導，降低創業初期資金壓力。貸款額度、補貼與資格以官方最新簡章為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.taiwanjobs.gov.tw/",
+      "location": null
+    }
+  ]
+}

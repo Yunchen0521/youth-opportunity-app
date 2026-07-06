@@ -1,0 +1,1540 @@
+{
+  "version": "0.3.0",
+  "updatedAt": "2026-06-16",
+  "note": "資料以各官網最新簡章為準；deadline 為 null 者表示長期開放或年度徵件、日期逐年微調，請見 description。座標留空者由 App 以 address 即時定位。",
+  "opportunities": [
+    {
+      "id": "jamie-gapyear",
+      "title": "Jamie's Gapyear Program",
+      "category": "grant",
+      "organizer": "林之晨 / AppWorks",
+      "sourceType": "company",
+      "summary": "給 21 歲以下、願意休學一年的青年新台幣 100 萬元，不需償還，專注做自己想做的事。每年一屆、約 1 月開放、4 月截止。錄取率極低（第二屆約 2.75%），重視真正的行動力與想法。",
+      "description": "由 AppWorks 創辦人林之晨個人發起，贊助 21 歲以下、願意休學一年的青年新台幣 100 萬元（稅前、無附帶條件、不需償還），全心投入一年想完成的計畫。團隊每週聯繫、定期聚會分享進度。申請與最新屆別資訊以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": 21,
+        "identities": [
+          "學生",
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "新台幣 100 萬元（不需償還）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.gapyear.tw/",
+      "location": null
+    },
+    {
+      "id": "cloudgate-wanderer",
+      "title": "雲門「流浪者計畫」",
+      "category": "grant",
+      "organizer": "財團法人雲門文化藝術基金會",
+      "sourceType": "foundation",
+      "summary": "資助 18 至 30 歲青年獨自前往亞洲/大洋洲「貧窮旅行」至少連續 60 天，回來分享體悟。獎助金最高新台幣 15 萬元，含機票、簽證、保險。每年徵件，近屆約 6 月底截止。",
+      "description": "由雲門基金會自 2004 年起辦理，鼓勵青年創作者與社會工作者獨自完成至少連續 60 天的亞太國家旅行。領域涵蓋表演/視覺藝術、文學、電影、音樂，以及社區工作、公共服務、地方創生等。最新屆別徵件時間以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "最高新台幣 15 萬元（含機票、簽證、保險）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.cloudgate.org.tw/wanderer-project",
+      "location": null
+    },
+    {
+      "id": "keep-walking",
+      "title": "KEEP WALKING 夢想資助計畫",
+      "category": "grant",
+      "organizer": "帝亞吉歐 Diageo 台灣",
+      "sourceType": "company",
+      "summary": "自 2003 年起的老牌圓夢基金，年滿 20 歲皆可提案。每屆「夢想前行金」總額約 800 萬元，由約 10 名得主分配，近年聚焦永續議題。每年約 10 月開放、12 月中截止。",
+      "description": "由帝亞吉歐（Diageo）台灣辦理，已逾 20 屆、累計投入逾 2 億元支持數百個夢想。鼓勵民眾提出具社會影響力的夢想計畫並提供資助金與資源。最新屆別與金額以官網為準。",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": null,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每屆總額約 800 萬元（約 10 名得主分配）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.keepwalkingfund.com.tw/",
+      "location": null
+    },
+    {
+      "id": "xinyi-community",
+      "title": "信義房屋 全民社造行動計畫（社區一家）",
+      "category": "grant",
+      "organizer": "信義房屋",
+      "sourceType": "company",
+      "summary": "台灣最長壽的社造行動，不限年齡，個人、學生社團、團體皆可提案。個人類首獎最高 20 萬、社區類首獎最高 50 萬。每年約 3 至 4 月報名。",
+      "description": "由信義房屋辦理，逾 20 年投入逾 5 億元，協助數千個社區圓夢。設幸福社區、築夢個人、深耕校園等類別，鼓勵在地社區營造提案。提案落地地點視提案而定，最新屆別以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "個人類首獎最高 20 萬；社區類首獎最高 50 萬",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.taiwan4718.tw/",
+      "location": null
+    },
+    {
+      "id": "moe-pathfinder",
+      "title": "青年百億海外圓夢基金（Pathfinder）",
+      "category": "grant",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "政府自 114 年起推動的大型圓夢基金，協助 15 至 30 歲青年赴海外見習、培訓、圓夢。分築夢工場、海外翱翔等組別，單案最高可達百萬等級。每年分梯次受理。",
+      "description": "教育部青年發展署推動的四年百億計畫，協助青年取得海外見習與培訓資源、實踐國際行動，並提供培力課程。各梯次徵件時間與金額以官網最新公告為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 30,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "依組別，單案最高約 150–200 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://twpathfinder.org/",
+      "location": null
+    },
+    {
+      "id": "ndc-reward-youth",
+      "title": "獎勵青年投入地方創生行動計畫",
+      "category": "grant",
+      "organizer": "國家發展委員會",
+      "sourceType": "government",
+      "summary": "徵求 22 至 45 歲青年團隊提出地方創生行動方案，最高 35 萬元並導入培力課程。每年度徵件，約至 1 月中截止。",
+      "description": "國發會辦理，鼓勵青年投入地方創生、提出可落實的在地行動，提供獎勵金與陪伴輔導。主持人年齡約 22–45 歲，最新年度時程以官網為準。",
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 45,
+        "identities": [
+          "創業者",
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "最高 35 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.twrr.ndc.gov.tw/reward-youth",
+      "location": null
+    },
+    {
+      "id": "yda-ustart",
+      "title": "U-start 創新創業計畫",
+      "category": "startup",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "教育部官方旗艦級在學/應屆創業補助，學生團隊從創意到創業的兩階段資源。第一階段約 50 萬元（含育成費），第二階段績優再獲 35–100 萬元獎助。每年約 2 月底截止第一階段提案。",
+      "description": "由教育部青年發展署與各大專校院育成單位合作，補助在學或近 5 學年畢業的青年團隊（至少 3 人）創業。第一階段提供育成費與團隊營運費，第二階段針對績優團隊加碼獎助，並進駐校內育成中心。最新梯次以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生",
+          "社會新鮮人",
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "第一階段約 50 萬元/隊；第二階段 35–100 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://ustart.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "moea-youth-loan",
+      "title": "青年創業及啟動金貸款",
+      "category": "startup",
+      "organizer": "經濟部中小及新創企業署",
+      "sourceType": "government",
+      "summary": "青年創業最主要的政策性低利貸款，20 至 45 歲、事業設立未滿 5 年可申請，須先完成創業課程。合計最高約 1,200 萬元，利率約 2%。長期開放、由承貸銀行受理。",
+      "description": "經濟部中小及新創企業署辦理，協助青年取得創業所需資金，含準備金與週轉性/資本性支出額度。需完成規定創業課程時數，向承貸銀行申請。最新利率與額度以官網為準。",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "合計最高約 1,200 萬元（低利）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.moeasmea.gov.tw/article-tw-2570-4238",
+      "location": null
+    },
+    {
+      "id": "seinsights-ilab",
+      "title": "社企流 iLab 育成計畫",
+      "category": "startup",
+      "organizer": "社企流",
+      "sourceType": "foundation",
+      "summary": "全台第一個重視「社會影響力」的社創育成計畫，分孵化器與加速器雙軌，提供課程、諮詢與資源網絡（非現金為主）。各梯次徵件時間請以官網為準。",
+      "description": "由社企流辦理，協助社會創新/社會企業團隊成長，提供陪伴、課程與資源連結。最新梯次與是否開放徵件以官網最新公告為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "課程與資源（非現金為主）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://ilab.seinsights.asia/",
+      "location": null
+    },
+    {
+      "id": "yda-changemaker",
+      "title": "青年社區參與行動 2.0 Changemaker 計畫",
+      "category": "competition",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "鼓勵 18 至 35 歲青年組隊（2–5 人）回家鄉/社區提出在地行動方案。Actor 組每隊上限 25 萬、Changemaker 組每隊上限 35 萬行動金。每年徵件，約 1 至 3 月截止。",
+      "description": "教育部青年發展署辦理（即「青年好政」主要對應計畫），支持青年針對在地議題提出並執行社區行動方案，提供行動金與陪伴輔導，並有共享空間據點。最新徵件時間以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每隊最高 25–35 萬元行動金",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://changemaker.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-youngfly",
+      "title": "Young飛全球行動計畫",
+      "category": "competition",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "鼓勵 18 至 35 歲青年以聯合國永續發展目標（SDGs）提案、連結國際組織並落實在地行動。每隊最高 80 萬元，含培訓營。每年約 1 至 3 月提案。",
+      "description": "教育部青年發展署辦理，青年自組 3–6 人團隊提出與 SDGs 相關的國際/在地行動方案，獲選者參與培訓並執行計畫。最新年度時程與金額以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每隊最高 80 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://iyouth.youthhub.tw/youngfly/",
+      "location": null
+    },
+    {
+      "id": "yda-youthtravel",
+      "title": "青年壯遊臺灣—尋找感動地圖實踐計畫",
+      "category": "competition",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "鼓勵 15 至 35 歲青年自組團隊用雙腳走讀台灣、實踐在地行動，實踐獎金約 2 至 8 萬元，弱勢另有加補。每年約 1 至 3 月徵件。",
+      "description": "教育部青年發展署辦理，分種子組（高中職）與圓夢組（18–35），鼓勵青年規劃並完成在地壯遊與行動。最新年度時程以官網為準；全台另有多處青年壯遊點。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "實踐獎金約 2–8 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youthtravel.tw/",
+      "location": null
+    },
+    {
+      "id": "ntpc-startup-battle",
+      "title": "戰國策全國創新創業競賽",
+      "category": "competition",
+      "organizer": "中華創業育成協會",
+      "sourceType": "foundation",
+      "summary": "辦超過 20 年、接軌教育部 U-start 的全台最大跨校創業競賽。18 至 35 歲在學/近 5 年畢業或創業者皆可，優勝可進駐新北青年創業基地。每年約 3 至 6 月。",
+      "description": "由中華創業育成協會主辦（近屆與新北市政府青年局等合辦），提供獎金、進駐空間與加速器資源。最新屆別報名與決賽時間以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "學生",
+          "社會新鮮人",
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "總獎金數十萬元 + 進駐資源",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.2026ntpcstartup.com/",
+      "location": null
+    },
+    {
+      "id": "presidential-hackathon",
+      "title": "總統盃黑客松",
+      "category": "competition",
+      "organizer": "行政院",
+      "sourceType": "government",
+      "summary": "最高層級的公部門黑客松，運用政府開放資料與 AI 解決公共議題。卓越團隊 5 隊、每隊獲 20 萬元並由總統頒獎，優勝方案有機會落地。每年約 8 至 9 月報名。",
+      "description": "由行政院主辦（數位發展部等協辦），邀請民眾以資料與科技提案解決公共問題，於台北、桃園、台中、高雄等地辦理活動。每年屆別與報名時間以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "卓越團隊每隊 20 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://presidential-hackathon.taiwan.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "goldenpin-young",
+      "title": "金點新秀設計獎",
+      "category": "competition",
+      "organizer": "經濟部產業發展署 / 台灣設計研究院",
+      "sourceType": "government",
+      "summary": "台灣設計科系畢業生的最高榮譽競賽，以新一代設計展參展畢業專題報名。年度最佳設計獎 10 萬元、設計獎等 2–3 萬元。每年約 3 月截止。",
+      "description": "由經濟部產業發展署主辦、台灣設計研究院執行，於南港展覽館「新一代設計展」現場評選。最新報名時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "年度最佳設計獎 10 萬元等",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://goldenpin.org.tw/goldenpin/zh-TW/participate/young-pin-design-award",
+      "location": null
+    },
+    {
+      "id": "aicup",
+      "title": "AI CUP 全國大專校院人工智慧競賽",
+      "category": "competition",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "教育部官方大專 AI 競賽平台，每年春/秋多場、常與業界出題，提供高額獎金並搭配全台巡迴課程。以大專在學生為對象。",
+      "description": "教育部辦理（計畫辦公室於中央大學），提供大專學生實作 AI 題目的競賽機會與學習資源。各場次報名時間以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "高額獎金（依場次公告）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.aicup.tw/",
+      "location": null
+    },
+    {
+      "id": "tsmc-udreamer",
+      "title": "台積電青年築夢計畫",
+      "category": "competition",
+      "organizer": "台積電文教基金會",
+      "sourceType": "foundation",
+      "summary": "給大專/研究所在學學生團隊的圓夢計畫，每屆總獎金 300 萬元、約 8 組獲選，聚焦教育、長照、地方創生等永續議題。每年約 10 月報名。",
+      "description": "由台積電文教基金會辦理，鼓勵學生團隊以社會議題提案並落地實踐，提供獎金與輔導。最新屆別時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每屆總獎金 300 萬元（約 8 組）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.tsmc-foundation.org/dreambuilder",
+      "location": null
+    },
+    {
+      "id": "ntpc-social-designer",
+      "title": "Social Designer 青年永續社會設計挑戰賽",
+      "category": "competition",
+      "organizer": "新北市政府青年局",
+      "sourceType": "government",
+      "summary": "鎖定永續議題、針對高中職與大專生的社會設計競賽，3–5 人可跨校組隊。複賽提供實作經費、總決賽總獎金約 24 萬元。每年約 3 月報名。",
+      "description": "由新北市政府青年局辦理，鼓勵學生以社會設計解決永續議題，並辦理開幕式與工作坊。最新屆別時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "總決賽總獎金約 24 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://socialdesigner.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-public-intern",
+      "title": "大專生公部門見習計畫",
+      "category": "internship",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "大專在學生進入中央政府機關帶薪見習，認識政府運作。依時薪計酬，分學期中與暑假兩梯次。每年徵件，名額分布全台各中央機關。",
+      "description": "教育部青年發展署辦理，提供大專在學生（35 歲以下）進入總統府、五院及所屬中央機關見習的帶薪機會，分學期中與暑假梯次。最新梯次與時薪以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": 35,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "依時薪計酬（帶薪見習）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.yda.gov.tw/plan.aspx?p=2019",
+      "location": null
+    },
+    {
+      "id": "hakka-youth",
+      "title": "後生行世界客家實習計畫",
+      "category": "internship",
+      "organizer": "客家委員會",
+      "sourceType": "government",
+      "summary": "補助 18 至 26 歲學生赴海外（以東南亞為主）實習、認識客家。個人組 5–15 萬/案、團體組 30–40 萬/案。每年徵件。",
+      "description": "客委會辦理，鼓勵青年赴海外進行與客家相關的實習與交流，提供補助。最新年度時程與名額以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 26,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "個人組 5–15 萬/案；團體組 30–40 萬/案",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.hakkayouth.com.tw/",
+      "location": null
+    },
+    {
+      "id": "taipei-intern-allowance",
+      "title": "臺北市青年實習津貼計畫",
+      "category": "internship",
+      "organizer": "臺北市政府青年局",
+      "sourceType": "government",
+      "summary": "補助 15 至 35 歲在學青年參與實習，實習 60/90 日發給 1 至 3 萬元津貼。每年徵件，約至 11 月底。",
+      "description": "臺北市政府青年局辦理，鼓勵在學青年透過實習累積職場經驗並提供津貼。最新年度時程以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "臺北市"
+        ]
+      },
+      "amount": "實習 60/90 日發給 1–3 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.gov.taipei/",
+      "location": null
+    },
+    {
+      "id": "wda-flagship",
+      "title": "青年就業旗艦計畫",
+      "category": "training",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "企業先僱用 15 至 29 歲青年、再做 3 至 6 個月在職訓練，政府補助企業訓練薪資。長期開放、由各分署受理。",
+      "description": "勞動部勞發署辦理「先僱後訓」模式，協助缺乏工作經驗的青年進入職場並接受在職訓練，補助參訓企業。最新內容以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 29,
+        "identities": [
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "補助企業訓練薪資（前 3 月每月最高 1.2 萬等）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.wda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "wda-elite",
+      "title": "產業新尖兵計畫",
+      "category": "training",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "給 15 至 29 歲失/待業青年的職前訓練，聚焦五大領域。訓練費最高補助 10 萬元、每月另發 8,000 元學習獎勵金。年度滾動開班。",
+      "description": "勞動部勞發署辦理，補助青年參加指定領域職前訓練並提供學習獎勵金，邊上課邊領獎勵。最新班別與時程以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 29,
+        "identities": [
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "訓練費最高 10 萬元 + 每月 8,000 元學習獎勵金",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://elite.taiwanjobs.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "moe-studyabroad-dream",
+      "title": "學海築夢（含新南向學海築夢）",
+      "category": "exchange",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "補助大專在學生赴海外企業/機構實習至少 28 日，補助含國際機票。經各校甄選薦送，每年約 2 梯次。新南向版鎖定東南亞、南亞、紐澳等 18 國。",
+      "description": "教育部「學海計畫」系列之一，鼓勵大專在學生赴海外進行專業實習，由各校提計畫甄選薦送學生。校內計畫書時程依各校公告，整體以教育部留學資訊平台為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "補助含國際機票等（依各校核定）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.studyabroad.moe.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "moe-studyabroad-fly",
+      "title": "學海飛颺",
+      "category": "exchange",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "補助成績優異的大專在學生赴國外大學研修，每人約 5 至 30 萬元。經各校甄選薦送，每年分梯。弱勢學生另有「學海惜珠」版。",
+      "description": "教育部「學海計畫」系列之一，鼓勵優秀學生赴海外大學交換研修、拓展國際視野。校內甄選時程依各校公告，整體以教育部留學資訊平台為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每人約 5–30 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.studyabroad.moe.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "icdf-volunteer",
+      "title": "國合會海外服務工作團（海外志工）",
+      "category": "exchange",
+      "organizer": "財團法人國際合作發展基金會",
+      "sourceType": "government",
+      "summary": "派遣青年赴友邦從事專業志願服務，提供機票與住宿。20 歲以上可報名，每年度約 1 至 2 月受理第一梯次。",
+      "description": "國合會（TaiwanICDF）辦理，依專長派遣志工赴友邦（如巴拉圭、馬紹爾、史瓦帝尼等）協助技術合作計畫，提供生活與交通支援。最新梯次以官網為準。",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 65,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "提供機票與住宿等",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.icdf.org.tw/",
+      "location": null
+    },
+    {
+      "id": "mofa-youth-ambassador",
+      "title": "外交部國際青年大使交流計畫",
+      "category": "exchange",
+      "organizer": "外交部",
+      "sourceType": "government",
+      "summary": "選拔 18 至 35 歲學生組成青年大使團出訪友邦，進行國際交流與文化外交，由政府籌組。每年約 3 至 5 月報名、暑假出訪。",
+      "description": "外交部辦理，遴選大專學生擔任國際青年大使赴友邦進行交流訪問，培養國際視野與外交實務經驗。最新年度時程以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "政府籌組出訪（依年度公告）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youthambassador.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-iyouth-voice",
+      "title": "iYouth voice 青年國際發聲及蹲點研習計畫",
+      "category": "exchange",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "補助 18 至 35 歲青年赴海外參與國際會議發聲或蹲點研習，補助上限約 20 萬元，弱勢/原民/新住民另有加碼。全年分三階段受理。",
+      "description": "教育部青年發展署辦理，鼓勵青年參與國際事務、於國際場合發聲或進行海外蹲點學習，提供補助。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "補助上限約 20 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.yda.gov.tw/plan.aspx?p=1020",
+      "location": null
+    },
+    {
+      "id": "moe-overseas-scholarship",
+      "title": "教育部留學獎學金甄試",
+      "category": "scholarship",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "鼓勵青年自費出國攻讀學位，每年一次書面甄選、發給定額獎學金。近年約 1 至 2 月報名、6 月公告錄取。名額與學門逐年公告。",
+      "description": "教育部辦理的留學獎學金甄試，提供赴國外攻讀學位的青年定額獎學金，採書面甄選。每年度報名時間、名額與學門以教育部獎助學金資訊網最新公告為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "定額獎學金（依年度公告）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.scholarship.moe.gov.tw/scholarship",
+      "location": null
+    },
+    {
+      "id": "moe-public-scholarship",
+      "title": "教育部公費留學考試",
+      "category": "scholarship",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "全額公費補助赴指定學門攻讀學位，名額少、競爭高。每年辦理，學門與名額約前一年底公告。",
+      "description": "教育部辦理的公費留學考試，提供全額公費補助赴國外攻讀指定學門學位。最新學門名額與報名時間以教育部獎助學金資訊網公告為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "全額公費（依年度公告）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.scholarship.moe.gov.tw/studyabroad/exam",
+      "location": null
+    },
+    {
+      "id": "chf-scholarship",
+      "title": "嘉新獎學金",
+      "category": "scholarship",
+      "organizer": "嘉新兆福文化基金會",
+      "sourceType": "foundation",
+      "summary": "老牌清寒/身障獎學金，家境清寒或身心障礙的台灣學生（不含研究生）學業達標即可線上申請。每年度約至 4 月初截止。",
+      "description": "嘉新兆福文化基金會辦理，提供清寒或身障學生獎學金，採線上申請。最新年度資格與金額以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "依辦法（清寒/身障）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.chf.ngo/",
+      "location": null
+    },
+    {
+      "id": "delta-netherlands",
+      "title": "台達荷蘭環境獎學金",
+      "category": "scholarship",
+      "organizer": "台達電子文教基金會",
+      "sourceType": "company",
+      "summary": "補助赴荷蘭攻讀環境/永續能源碩士的青年，每名 25 萬元。每年約 1 至 4 月、截止約 4 月底。另有英國環境獎學金。",
+      "description": "台達電子文教基金會辦理，鼓勵青年赴荷蘭修讀環境相關碩士、投入永續能源領域。最新年度時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每名 25 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.delta-foundation.org.tw/project/15",
+      "location": null
+    },
+    {
+      "id": "wda-youth-employ-support",
+      "title": "支援青年就業計畫",
+      "category": "subsidy",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "給 15 至 29 歲初次尋職青年尋職津貼，每月 6,000 元最長 3 個月；穩定就業後再發就業獎勵，合計最高約 4.8 萬元。長期開放申請。",
+      "description": "勞動部勞發署辦理（2025/9 由「初次尋職青年穩定就業計畫」升級），協助初次尋職的青年順利就業並穩定留任，提供尋職津貼與就業獎勵金。申請資格以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 29,
+        "identities": [
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "尋職津貼每月 6,000 元 + 就業獎勵，合計最高約 4.8 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://special.taiwanjobs.gov.tw/internet/2025/YNGSRH/page-05.html",
+      "location": null
+    },
+    {
+      "id": "wda-cross-region",
+      "title": "青年跨域就業津貼",
+      "category": "subsidy",
+      "organizer": "勞動部勞動力發展署",
+      "sourceType": "government",
+      "summary": "18 至 29 歲青年到外地就業，可領交通、搬遷、租屋三大津貼（搬遷最高 3 萬、租屋每月最高 5,000 元）。長期開放。",
+      "description": "勞動部勞發署辦理，協助青年跨區域就業並減輕初期生活負擔，提供交通、搬遷與租屋補助。申請條件以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 29,
+        "identities": [
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "搬遷最高 3 萬、租屋每月最高 5,000 元等",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://emps.wda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-career-navigator",
+      "title": "青年生涯領航計畫",
+      "category": "subsidy",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "補助高中職應屆畢業生延後升學、先探索職場，每月 1 萬元實踐獎金，兩年最高 28.5 萬元。每年約 11 月至 2 月報名。",
+      "description": "教育部辦理（115 年起由原青年教育與就業儲蓄帳戶方案轉型，青發署接辦），協助高中職畢業生先就業/體驗職場再升學，提供實踐獎金。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每月 1 萬元，兩年最高 28.5 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.yda.gov.tw/planList.aspx?uid=93&pid=55",
+      "location": null
+    },
+    {
+      "id": "yda-rich-platform",
+      "title": "RICH 職場體驗網",
+      "category": "platform",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "教育部青年發展署的官方職場體驗媒合入口，整合公私部門實習、工讀與職場體驗機會。長期開放、可註冊申請。想找更多實習機會時的起點。",
+      "description": "整合青年署各項職場體驗（公部門見習、暑期工讀、經濟自立工讀、青年創業見習等）的官方平台，並提供職場權益與求職技巧專欄。屬資源平台入口，非單一機會。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": 35,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://rich.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "moea-startup-hub",
+      "title": "新創圓夢網",
+      "category": "platform",
+      "organizer": "經濟部中小及新創企業署",
+      "sourceType": "government",
+      "summary": "全國最大的創業資源整合平台，彙整政府各部會與民間創業資源：找資金、創業諮詢、活動看板、創業補給站。長期開放，創業前的第一站。",
+      "description": "經濟部中小及新創企業署營運，提供一站式創業資源服務，按新創成長階段分類，並設 0800 創業諮詢專線。屬資源平台入口，非單一機會。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者",
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://startup.sme.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "startup-terrace-linkou",
+      "title": "林口新創園（Startup Terrace）",
+      "category": "venue",
+      "organizer": "經濟部中小及新創企業署",
+      "sourceType": "government",
+      "summary": "由 2017 世大運選手村活化的旗艦級國際新創基地，提供新創辦公室、住宿、共同工作與展演空間。常態進駐申請、分梯次受理。位於新北市林口區。",
+      "description": "經濟部中小及新創企業署打造的國際新創聚落，提供新創團隊辦公空間、住宿、共同工作空間與加速資源，並辦理進駐申請與國際鏈結活動。進駐梯次與條件以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "新北市"
+        ]
+      },
+      "amount": "提供空間與資源（非現金補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.startupterrace.tw/",
+      "location": {
+        "city": "新北市",
+        "address": "新北市林口區仁愛路二段502號",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "taipei-tys",
+      "title": "臺北青年職涯發展中心（TYS）",
+      "category": "venue",
+      "organizer": "臺北市政府青年局",
+      "sourceType": "government",
+      "summary": "臺北市官方青年職涯資源據點，提供職涯諮詢、課程與活動。位於台北市中正區，是青年找職涯資源的實體窗口。",
+      "description": "臺北市政府青年局營運的職涯發展中心，提供青年職涯探索、諮詢輔導與各式講座工作坊。最新服務與活動以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "臺北市"
+        ]
+      },
+      "amount": "提供職涯資源與活動（多為免費）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.gov.taipei/",
+      "location": {
+        "city": "臺北市",
+        "address": "臺北市中正區仁愛路一段17號2樓",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "kaohsiung-pinway",
+      "title": "Pinway 青創試煉基地",
+      "category": "venue",
+      "organizer": "高雄市政府青年局",
+      "sourceType": "government",
+      "summary": "高雄市官方青年創業基地，位於駁二藝術特區 8 號倉庫，提供進駐空間、課程與創業資源。鹽埕區海濱地段，氛圍活潑。",
+      "description": "高雄市政府青年局營運的青年創業基地，提供新創團隊進駐空間與輔導資源，並辦理創業課程與活動。進駐與活動資訊以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "高雄市"
+        ]
+      },
+      "amount": "提供空間與資源（非現金補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.kcg.gov.tw/",
+      "location": {
+        "city": "高雄市",
+        "address": "高雄市鹽埕區瀨南街8號（駁二8號倉庫）",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "taoyuan-youth-hq",
+      "title": "桃園青創指揮部",
+      "category": "venue",
+      "organizer": "桃園市政府青年事務局",
+      "sourceType": "government",
+      "summary": "桃園市官方青年創業基地，位於中壢區，提供進駐空間、課程與創業諮詢。是桃園青年創業的實體據點。",
+      "description": "桃園市政府青年事務局營運的青創據點，提供新創團隊空間與輔導，並辦理創業相關課程與活動。進駐與活動資訊以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "桃園市"
+        ]
+      },
+      "amount": "提供空間與資源（非現金補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.tycg.gov.tw/",
+      "location": {
+        "city": "桃園市",
+        "address": "桃園市中壢區環北路390號3樓",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "tainan-winwin",
+      "title": "贏地創新育成基地",
+      "category": "venue",
+      "organizer": "臺南市政府",
+      "sourceType": "government",
+      "summary": "臺南市官方創業育成基地，位於新營區，提供進駐空間、育成輔導與創業資源。是台南青年創業的實體據點。",
+      "description": "臺南市政府支持營運的創新育成基地，提供新創團隊空間、育成與資源連結，並辦理創業課程與活動。進駐與活動資訊以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "臺南市"
+        ]
+      },
+      "amount": "提供空間與資源（非現金補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.winwin.org.tw/",
+      "location": {
+        "city": "臺南市",
+        "address": "臺南市新營區民治路38號",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "yda-economic-workstudy",
+      "title": "經濟自立青年工讀計畫",
+      "category": "internship",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "為經濟弱勢大專在學生提供全年工讀媒合，於政府機關、公股銀行等單位有薪工讀。長期開放、全年受理。",
+      "description": "教育部青年發展署辦理，協助經濟弱勢的大專在學生透過工讀累積經驗並減輕經濟負擔，依勞基法給薪。最新內容以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": 35,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "有薪工讀（不低於基本工資）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.yda.gov.tw/plan.aspx?p=2020",
+      "location": null
+    },
+    {
+      "id": "yda-youth-volunteer-award",
+      "title": "青年志工行動競賽（青志獎）",
+      "category": "competition",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "表揚服務績優的青年志工團隊，15 至 35 歲皆可，個人最高 5 萬元（青年志霸獎）。每年約 12/20 前報名、次年 3 月頒獎。",
+      "description": "教育部青年發展署辦理，鼓勵並表揚投入志願服務的青年團隊，另有自組團隊行動金獎勵。最新屆別時程以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "個人組最高 5 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youthvolunteer.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-letstalk",
+      "title": "青年好政 Let's Talk",
+      "category": "competition",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "18 至 35 歲青年可提案、自辦公共議題討論會，獲選團隊有執行經費補助。鼓勵青年參與公共政策審議。每年分梯次徵件。",
+      "description": "教育部青年發展署辦理的審議式公共參與，青年針對關注議題舉辦討論會並彙整建言，提供執行團隊經費。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "獲選團隊執行經費補助",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youthhub.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "yda-overseas-peace-volunteer",
+      "title": "青年海外和平志工團",
+      "category": "exchange",
+      "organizer": "教育部青年發展署",
+      "sourceType": "government",
+      "summary": "補助學校或 NGO 帶領 18 至 35 歲青年赴海外進行和平志願服務，每案最高約 30 萬元。每年度受理。",
+      "description": "教育部青年發展署辦理，鼓勵青年透過 NPO 或大專校院組隊赴海外從事志願服務、促進國際交流。最新時程與名額以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每案最高約 30 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://yopc.yda.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "ustart-yuanyang",
+      "title": "U-start 原漾計畫",
+      "category": "startup",
+      "organizer": "教育部青年發展署 × 原住民族委員會",
+      "sourceType": "government",
+      "summary": "U-start 的原住民族青年專屬版，補助原民青年團隊（至少 3 人、1/3 以上具原民身分）創業。第一階段 55 萬、第二階段最高 100 萬。每年徵件。",
+      "description": "教育部青年發展署與原民會合作，針對原住民族青年團隊提供兩階段創業補助與育成資源。最新梯次以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "identities": [
+          "學生",
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "第一階段 55 萬元；第二階段最高 100 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://startup.sme.gov.tw/home/modules/funding/detail/?sId=134",
+      "location": null
+    },
+    {
+      "id": "sbir",
+      "title": "SBIR 小型企業創新研發計畫",
+      "category": "subsidy",
+      "organizer": "經濟部中小及新創企業署",
+      "sourceType": "government",
+      "summary": "中小企業創新研發的無償補助主力，以企業為主體。Phase 1 上限 150 萬、Phase 2 每年 600 萬，隨到隨受理；2026 起加碼專利費補助。",
+      "description": "經濟部中小及新創企業署辦理，補助中小企業（含新創）投入創新研發，採隨到隨受理。最新公告以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "Phase 1 上限 150 萬；Phase 2 每年 600 萬",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.sbir.org.tw/",
+      "location": null
+    },
+    {
+      "id": "moc-youth-village",
+      "title": "青年村落文化行動計畫",
+      "category": "grant",
+      "organizer": "文化部",
+      "sourceType": "government",
+      "summary": "鼓勵 18 至 45 歲青年以社會創新改善社區公共議題，每年期最高 120 萬元。每年度徵件。",
+      "description": "文化部辦理，支持青年提出並執行改善地方/社區的文化行動方案，提供補助與陪伴。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每年期最高 120 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youthgo.moc.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "cip-summer-workstudy",
+      "title": "原住民族青年暑期工讀計畫",
+      "category": "internship",
+      "organizer": "原住民族委員會",
+      "sourceType": "government",
+      "summary": "提供具原住民身分的青年學子暑期有薪工讀機會，於各地原民就服據點服務。每年度約前一年底啟動報名。",
+      "description": "原民會辦理，協助原住民族青年學生於暑期透過工讀累積職場經驗。最新年度時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "暑期有薪工讀",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.cip.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "ndc-local-station",
+      "title": "地方創生青年培力工作站",
+      "category": "grant",
+      "organizer": "國家發展委員會",
+      "sourceType": "government",
+      "summary": "補助青年團隊在地設立實體工作站、投入地方創生，一般組每年最高 250 萬、高階組最高 300 萬。每年度徵件。",
+      "description": "國發會辦理，支持青年於各地設置實體工作站，串連在地資源推動地方創生，並提供培力。主持人約 45 歲以下，最新時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": 45,
+        "identities": [
+          "創業者",
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "一般組每年最高 250 萬；高階組最高 300 萬",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.twrr.ndc.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "moe-studyabroad-cherish",
+      "title": "學海惜珠",
+      "category": "scholarship",
+      "organizer": "教育部",
+      "sourceType": "government",
+      "summary": "學海計畫的弱勢學生版，補助低收/中低收/特境/身障的大專在學生赴海外研修，每人約 5 至 30 萬元。經各校甄選薦送。",
+      "description": "教育部「學海計畫」系列之一，協助經濟弱勢學生赴海外研修、拓展國際視野。校內甄選時程依各校公告，整體以教育部留學資訊平台為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "每人約 5–30 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.studyabroad.moe.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "taipei-startup-loan",
+      "title": "臺北市青年創業融資貸款",
+      "category": "startup",
+      "organizer": "臺北市政府青年局",
+      "sourceType": "government",
+      "summary": "18 至 45 歲於台北市創業者可申請，貸款最高 300 萬元、利息全額補貼。全年受理。",
+      "description": "臺北市政府青年局辦理，協助青年取得創業資金並補貼利息，降低創業門檻。資格與額度以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "臺北市"
+        ]
+      },
+      "amount": "最高 300 萬元（利息全額補貼）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.gov.taipei/",
+      "location": null
+    },
+    {
+      "id": "ntpc-youth-grant",
+      "title": "新北市青年綜合發展補助",
+      "category": "subsidy",
+      "organizer": "新北市政府青年局",
+      "sourceType": "government",
+      "summary": "支持 15 至 40 歲青年的多元發展提案，一般最高 2 萬、特定類最高 10 萬元。每年度受理。",
+      "description": "新北市政府青年局辦理，鼓勵青年自主提案投入學習、公共參與與多元發展，提供經費補助。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 40,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "新北市"
+        ]
+      },
+      "amount": "一般最高 2 萬；特定類最高 10 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.youth.ntpc.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "taoyuan-culture-grant",
+      "title": "桃園市促進青年參與多元文化補助",
+      "category": "grant",
+      "organizer": "桃園市政府青年事務局",
+      "sourceType": "government",
+      "summary": "鼓勵 15 至 35 歲青年參與多元文化行動，一般提案最高 2 萬、公益類最高 10 萬元。每年度受理。",
+      "description": "桃園市政府青年事務局辦理，支持青年提出並執行與多元文化相關的行動方案。最新時程以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 35,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "桃園市"
+        ]
+      },
+      "amount": "一般最高 2 萬；公益類最高 10 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.tycg.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "kaohsiung-startup-grant",
+      "title": "高雄市青年創業補助",
+      "category": "startup",
+      "organizer": "高雄市政府青年局",
+      "sourceType": "government",
+      "summary": "18 至 45 歲於高雄創業者可申請，一般型每案最高 8 萬、競爭型每案最高 50 萬元。每年約 3 至 4 月受理。",
+      "description": "高雄市政府青年局辦理，提供青年創業者啟動與成長階段的補助。最新時程與額度以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "高雄市"
+        ]
+      },
+      "amount": "一般型最高 8 萬；競爭型最高 50 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.kcg.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "taipei-z-competition",
+      "title": "Z 世代創新創業競賽",
+      "category": "competition",
+      "organizer": "臺北市政府青年局",
+      "sourceType": "government",
+      "summary": "臺北市青年局辦理的創新創業競賽，總獎金約 208 萬元，鼓勵青年團隊提出創業構想。每年度徵件。",
+      "description": "臺北市政府青年局辦理，提供青年創業競賽舞台與獎金、資源串連。最新屆別時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者",
+          "學生"
+        ],
+        "regions": [
+          "臺北市"
+        ]
+      },
+      "amount": "總獎金約 208 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.gov.taipei/",
+      "location": null
+    },
+    {
+      "id": "kaohsiung-startup-challenge",
+      "title": "永續高雄青年創業挑戰賽",
+      "category": "competition",
+      "organizer": "高雄市政府青年局",
+      "sourceType": "government",
+      "summary": "以永續為主題的青年創業競賽，總獎金約 223 萬元。每年度徵件。",
+      "description": "高雄市政府青年局辦理，鼓勵青年以永續議題提出創業方案，提供獎金與資源。最新屆別時程以官網為準。",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "創業者",
+          "學生"
+        ],
+        "regions": [
+          "高雄市"
+        ]
+      },
+      "amount": "總獎金約 223 萬元",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://youth.kcg.gov.tw/",
+      "location": null
+    },
+    {
+      "id": "aama-taipei",
+      "title": "AAMA 台北搖籃計畫",
+      "category": "training",
+      "organizer": "臺北市創業者共創平台基金會",
+      "sourceType": "foundation",
+      "summary": "為期兩年的創業者導師制培育（非現金補助），提供導師輔導與社群，適合處於成長期的創業者（建議 25–45 歲）。分期招募。",
+      "description": "由臺北市創業者共創平台基金會辦理，透過資深創業家擔任導師，陪伴新世代創業者成長。最新期別報名時間以官網為準。",
+      "eligibility": {
+        "minAge": 25,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "兩年期導師輔導與社群（非現金）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.aamataipei.com.tw/",
+      "location": null
+    },
+    {
+      "id": "vya-workcamp",
+      "title": "VYA 國際工作營",
+      "category": "exchange",
+      "organizer": "台灣願景青年行動網協會（VYA）",
+      "sourceType": "foundation",
+      "summary": "帶青年參與國內外國際工作營從事公共參與與文化交流，依梯次常態辦理（多為使用者付費型，非補助）。",
+      "description": "由 VYA 協會辦理，提供青年參與國際志工/工作營的管道，從事社區服務與跨文化交流。各梯次資訊以官網為準。",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "identities": [
+          "不限"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "多為使用者付費型（非補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.vya.org.tw/",
+      "location": null
+    },
+    {
+      "id": "rye-exchange",
+      "title": "扶輪青少年交換 (RYE)",
+      "category": "exchange",
+      "organizer": "國際扶輪台灣青少年交換",
+      "sourceType": "foundation",
+      "summary": "15 至 19 歲高中生赴海外當交換學生，由接待家庭支援食宿。每年約前一年 10 月截止報名、隔年出發。",
+      "description": "國際扶輪辦理的青少年交換計畫，提供高中生赴海外長期文化交換的機會，由當地扶輪社與接待家庭支援。最新梯次以官網為準。",
+      "eligibility": {
+        "minAge": 15,
+        "maxAge": 19,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "amount": "接待家庭支援食宿",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.tryemp.org/",
+      "location": null
+    },
+    {
+      "id": "taichung-dream-base",
+      "title": "摘星青年築夢基地（審計新村）",
+      "category": "venue",
+      "organizer": "臺中市政府",
+      "sourceType": "government",
+      "summary": "臺中市「摘星計畫」的青年創業聚落，位於西區審計新村，提供進駐空間與創業資源。文創與創業氛圍濃厚。",
+      "description": "臺中市政府推動的青年創業基地，協助 20 至 45 歲青年進駐並經營品牌，另有霧峰光復新村據點。進駐與活動資訊以官網為準。",
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 45,
+        "identities": [
+          "創業者"
+        ],
+        "regions": [
+          "臺中市"
+        ]
+      },
+      "amount": "提供空間與資源（非現金補助）",
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.tcdream.taichung.gov.tw/",
+      "location": {
+        "city": "臺中市",
+        "address": "臺中市西區民生路368巷（審計新村）",
+        "latitude": null,
+        "longitude": null
+      }
+    }
+  ]
+}

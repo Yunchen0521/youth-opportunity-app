@@ -1,0 +1,6 @@
+name = "youth-opportunity-advisor"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+# ANTHROPIC_API_KEY 不寫在這裡，用 secret 存：
+#   npx wrangler secret put ANTHROPIC_API_KEY
