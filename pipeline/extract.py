@@ -76,7 +76,7 @@ def llm_extract(client: genai.Client, text: str, source: dict) -> list[dict]:
     prompt = (f"來源：{source['name']}（sourceType={source['sourceType']}、"
               f"預設主辦：{source['organizer']}）\n\n網頁文字：\n{text[:20000]}")
     resp = client.models.generate_content(
-        model="gemini-2.0-flash",     # 免費額度機型
+        model="gemini-2.5-flash",     # 免費額度機型
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM,
