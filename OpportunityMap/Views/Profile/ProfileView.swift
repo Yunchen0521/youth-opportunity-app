@@ -60,11 +60,6 @@ struct ProfileView: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
-
-                Section("即將推出") {
-                    Label("截止提醒推播", systemImage: "bell")
-                }
-                .foregroundStyle(.secondary)
             }
             .navigationTitle("我的")
             .sheet(isPresented: $showExplanation) {
