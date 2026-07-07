@@ -3,9 +3,9 @@ name: 更新機會資料
 # 預設：手動觸發（到 GitHub 的 Actions 分頁按「Run workflow」）
 # 想改成每日自動：把下面 schedule 兩行的註解拿掉即可
 on:
-  workflow_dispatch:
-  # schedule:
-  #   - cron: "0 22 * * *"   # 每天 UTC 22:00 = 台灣早上 6 點
+  workflow_dispatch:         # 仍可隨時手動觸發
+  schedule:
+    - cron: "0 22 * * *"     # 每天 UTC 22:00 = 台灣早上 6 點，自動更新
 
 permissions:
   contents: write            # 允許 workflow 把更新後的 JSON commit 回 repo
