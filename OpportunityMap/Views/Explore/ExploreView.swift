@@ -87,11 +87,22 @@ struct ExploreView: View {
         }
     }
 
+    @ViewBuilder
     private var listContent: some View {
-        List {
-            if store.filtered.isEmpty {
-                ContentUnavailableView.search
-            } else {
+        if store.filtered.isEmpty {
+            // 移出 List → ContentUnavailableView 會在可用空間裡自動置中
+            ContentUnavailableView {
+                Label("查無結果", systemImage: "magnifyingglass")
+                    .font(.title)
+                    .bold()
+                    .padding(.bottom, 15)
+            } description: {
+                Text(store.searchText.isEmpty
+                     ? "找不到符合條件的機會，試著調整篩選。"
+                     : "找不到「\(store.searchText)」相關的機會，請換個關鍵字或確認拼字。")
+            }
+        } else {
+            List {
                 // 計數文字：放成一般列（非 sticky header），只在頂端可見，往下滑即捲離。
                 Text("\(displayed.count) 個機會")
                     .font(.subheadline)
@@ -105,11 +116,11 @@ struct ExploreView: View {
                     }
                 }
             }
+            .listStyle(.plain)
+            .environment(\.defaultMinListRowHeight, 0)   // 讓「N 個機會」短列縮到內容高度，不被最小列高撐開
+            .modifier(RefreshUnlessSearching { await store.loadRemoteThenFallback() })
+            .overlay { SearchDimOverlay(searchTextEmpty: store.searchText.isEmpty) }
         }
-        .listStyle(.plain)
-        .environment(\.defaultMinListRowHeight, 0)   // 讓「N 個機會」短列縮到內容高度，不被最小列高撐開
-        .refreshable { await store.loadRemoteThenFallback() }
-        .overlay { SearchDimOverlay(searchTextEmpty: store.searchText.isEmpty) }
     }
 
     /// 搜尋聚焦且尚未輸入時，在清單上疊一層半透明灰（表示「搜尋中」）。
@@ -125,6 +136,21 @@ struct ExploreView: View {
                     .ignoresSafeArea()
                     .allowsHitTesting(false)   // 純視覺遮罩，不擋捲動/點擊
                     .transition(.opacity)
+            }
+        }
+    }
+
+    /// 搜尋聚焦時停用下拉重整（避免搜尋當下誤觸整份重抓）。
+    /// 讀 `\.isSearching` 需在 searchable 的子層，故用 ViewModifier 包住 List。
+    private struct RefreshUnlessSearching: ViewModifier {
+        let action: () async -> Void
+        @Environment(\.isSearching) private var isSearching
+
+        func body(content: Content) -> some View {
+            if isSearching {
+                content
+            } else {
+                content.refreshable { await action() }
             }
         }
     }
