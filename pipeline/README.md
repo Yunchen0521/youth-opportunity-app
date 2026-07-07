@@ -1,39 +1,47 @@
-# 資料管線（雛形）
+# 資料管線
 
-把「散在各官網的公告」自動變成 App 讀得懂的結構化 JSON。
-
-## 這條線在做什麼
+把各官網公告自動變成 App 讀得懂的結構化資料。
 
 ```
-抓來源網頁  →  Claude 解析成 Opportunity 結構  →  輸出 OpportunityFeed JSON
-（requests）    （structured outputs，對齊 App 模型）   （之後 commit 到 GitHub，App 自動更新）
+sources.json（來源清單）
+   ↓  逐一抓網頁（requests）
+   ↓  Claude 解析成 Opportunity 結構（structured outputs）
+   ↓  去重合併（只加新的，不覆蓋既有手工策展資料）
+data/opportunities.json  →  App 從遠端抓到、自動更新
 ```
 
-- **`extract.py`**：雛形主程式。目前只接一個已驗證的來源（台灣就業通 投資青年就業方案），
-  用來把整條流程跑通。
-- **為什麼用 Claude**：把自由格式的公告（誰能申請、截止日、金額…）抽成固定欄位，正是 LLM 最擅長、
-  也是履歷「AI-assisted Development」的實際展示。用 structured outputs 保證輸出一定符合 schema。
+## 檔案
 
-## 試跑
+- **`sources.json`**：要抓的來源清單（名稱、網址、sourceType、預設主辦）。要加來源就編這個檔。
+- **`extract.py`**：主程式。讀 `sources.json` → 抓 → Claude 解析 → 去重合併進 `../data/opportunities.json`。
+- **`../.github/workflows/update-data.yml`**：GitHub Actions，手動觸發跑 `extract.py`，有變更就自動 commit。
+
+## 本機試跑
 
 ```bash
 cd pipeline
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=sk-ant-...      # 用你自己的 API 金鑰（會計費，一次幾塊台幣）
-python extract.py                        # 印出解析結果
-python extract.py --out feed.json        # 存成檔案看看
+export ANTHROPIC_API_KEY=sk-ant-...
+python extract.py --dry-run   # 只印出會新增哪些，不寫檔
+python extract.py             # 實際合併寫回 data/opportunities.json
 ```
 
-輸出就是 App 讀的 `OpportunityFeed` 格式（`version` / `updatedAt` / `opportunities[]`）。
+## 用 GitHub Actions 跑（手動觸發）
 
-## 這只是雛形 — 還沒做的（之後統一深入）
+1. 到 repo **Settings → Secrets and variables → Actions → New repository secret**，
+   新增 `ANTHROPIC_API_KEY`（值為你的 Anthropic 金鑰）。
+2. 到 **Actions** 分頁 → 選「更新機會資料」→ 按 **Run workflow**。
+3. 跑完若有新資料，會自動 commit 回 `data/opportunities.json`，App 下次開啟即更新。
 
-- **多來源**：改成讀 `../data/source-registry.md` 的 P1 清單，逐一擷取。
-- **去重與合併**：跨來源、跨天的重複計畫要合併，不是每天蓋掉。
-- **驗證**：日期/金額格式檢查、明顯錯誤過濾。
-- **座標**：venue 類的實體據點補經緯度（給地圖用）。
-- **自動排程**：GitHub Actions 每日跑一次，把結果 commit 到資料 repo → App 隔天自動更新。
-- **成本**：批次擷取可把 `extract.py` 的 model 改成 `claude-haiku-4-5` 省錢。
+想改成**每天自動跑**：把 `update-data.yml` 裡 `schedule` 兩行的註解拿掉即可（會每天用到 API 金鑰、產生少量費用）。
 
-> 現階段目的只是「跑通一條」，證明「網頁 → AI 解析 → App 格式」這條路可行。
-> 規模化（涵蓋 registry 裡的主要來源）是把這支腳本重複套用到更多來源而已。
+## 去重原則
+
+以「標題正規化後」比對：已存在的**跳過**（保留手工策展的版本），只加**全新**的機會。
+所以重複跑不會洗掉或洗爛既有資料，只會補進新項目。
+
+## 還沒做（之後可加）
+
+- **enrichment**：跟著計畫連結再抓一層，補金額 / 截止日 / 座標（目前這些常是 null）。
+- **更多來源**：把 `source-registry.md` 裡其他 P1/P2 來源逐一加進 `sources.json`。
+- **成本**：批次擷取可把 `extract.py` 的 model 改成 `claude-haiku-4-5`。
