@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
-  "updatedAt": "2026-06-16",
+  "version": "0.3.1",
+  "updatedAt": "2026-07-07",
   "note": "資料以各官網最新簡章為準；deadline 為 null 者表示長期開放或年度徵件、日期逐年微調，請見 description。座標留空者由 App 以 address 即時定位。",
   "opportunities": [
     {
@@ -1535,6 +1535,55 @@
         "latitude": null,
         "longitude": null
       }
+    },
+    {
+      "title": "投資青年就業方案第二期",
+      "category": "platform",
+      "organizer": "勞動部勞動力發展署",
+      "summary": "勞動部推動「投資青年就業方案第二期」(112-115年)，旨在提供青年就業相關政策與資源，並關懷在校學生及大專畢業生就業情況。",
+      "description": "本方案包含文本、策略圖、預期績效及經費彙整表、懶人包等文件，以支持青年就業。",
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.wda.gov.tw/",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生",
+          "社會新鮮人"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "id": "opp-2f9909debe",
+      "sourceType": "government",
+      "location": null
+    },
+    {
+      "title": "大專學生研究計畫",
+      "category": "subsidy",
+      "organizer": "國家科學及技術委員會",
+      "summary": "國家科學及技術委員會提供大專學生申請研究計畫補助，鼓勵學生進行學術研究，申請者需透過線上系統提交申請與成果報告。",
+      "description": "本計畫旨在補助大專學生進行研究，申請者需依據「補助大專學生研究計畫作業要點」準備申請書，並透過線上系統提交。計畫執行後需繳交研究成果報告，並可申請執行證明。",
+      "amount": null,
+      "deadline": null,
+      "applyStartDate": null,
+      "website": "https://www.nstc.gov.tw/",
+      "eligibility": {
+        "minAge": null,
+        "maxAge": null,
+        "identities": [
+          "學生"
+        ],
+        "regions": [
+          "全國"
+        ]
+      },
+      "id": "opp-2e905ff1e8",
+      "sourceType": "government",
+      "location": null
     }
   ]
 }
