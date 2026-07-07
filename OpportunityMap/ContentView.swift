@@ -35,10 +35,6 @@ struct ContentView: View {
                 .tabItem { Label("探索", systemImage: "square.grid.2x2") }
                 .tag(AppTab.explore)
 
-            OpportunityMapView()
-                .tabItem { Label("地圖", systemImage: "map") }
-                .tag(AppTab.map)
-
             FavoritesView()
                 .tabItem { Label("收藏", systemImage: "heart") }
                 .tag(AppTab.favorites)

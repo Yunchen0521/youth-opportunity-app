@@ -8,7 +8,6 @@ final class AppRouter {
 
 enum AppTab {
     static let explore = 0
-    static let map = 1
     static let favorites = 2
     static let profile = 3
 }

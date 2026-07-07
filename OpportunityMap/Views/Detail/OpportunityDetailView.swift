@@ -27,6 +27,9 @@ struct OpportunityDetailView: View {
                 card(title: "三句話摘要") { Text(opportunity.summary) }
                 card(title: "計畫內容") { Text(opportunity.description) }
                 detailsCard
+                if let location = opportunity.location {
+                    VenueMapCard(location: location)
+                }
             }
             .padding(20)
             .padding(.bottom, 90)
