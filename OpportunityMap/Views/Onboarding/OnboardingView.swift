@@ -17,6 +17,7 @@ struct OnboardingView: View {
                     profilePage(age: $profileStore.profile.age,
                                 identity: $profileStore.profile.identity,
                                 region: $profileStore.profile.region).tag(1)
+                    explanationPage.tag(2)
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
 
@@ -127,6 +128,33 @@ struct OnboardingView: View {
         .padding(.horizontal, 32)
     }
 
+    // MARK: - 第三頁：推薦說明（有設定條件才會看到）
+
+    private var explanationPage: some View {
+        VStack(spacing: 24) {
+            Spacer()
+            Image(systemName: "sparkles")
+                .font(.system(size: 56))
+                .foregroundStyle(Color.accentColor)
+
+            VStack(spacing: 8) {
+                Text("推薦怎麼運作")
+                    .font(.title.bold())
+                Text("依你剛才設定的條件，我們會標出每個機會適不適合你。")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+
+            MatchExplanationView()
+                .padding(16)
+                .softGlass(cornerRadius: 16)
+
+            Spacer()
+        }
+        .padding(.horizontal, 32)
+    }
+
     private func pickerRow<Content: View>(_ label: String, @ViewBuilder content: () -> Content) -> some View {
         HStack {
             Text(label).font(.body)
@@ -144,13 +172,21 @@ struct OnboardingView: View {
     @ViewBuilder private var bottomBar: some View {
         VStack(spacing: 12) {
             Button {
-                if step == 0 {
+                switch step {
+                case 0:
                     withAnimation { step = 1 }
-                } else {
+                case 1:
+                    // 有設定條件 → 帶到說明頁；沒設定 → 直接進 App
+                    if profileStore.profile.hasCriteria {
+                        withAnimation { step = 2 }
+                    } else {
+                        onFinish()
+                    }
+                default:
                     onFinish()
                 }
             } label: {
-                Text(step == 0 ? "開始" : "完成")
+                Text(primaryButtonTitle)
                     .font(.headline)
                     .frame(maxWidth: .infinity, minHeight: 50)
             }
@@ -164,5 +200,13 @@ struct OnboardingView: View {
         }
         .padding(.horizontal, 32)
         .padding(.bottom, 20)
+    }
+
+    private var primaryButtonTitle: String {
+        switch step {
+        case 0: return "開始"
+        case 1: return profileStore.profile.hasCriteria ? "下一步" : "完成"
+        default: return "開始使用"
+        }
     }
 }

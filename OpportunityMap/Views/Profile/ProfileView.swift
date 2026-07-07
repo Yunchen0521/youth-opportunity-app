@@ -4,6 +4,8 @@ import SwiftUI
 struct ProfileView: View {
     @Environment(OpportunityStore.self) private var store
     @Environment(ProfileStore.self) private var profileStore
+    @State private var showExplanation = false
+    @State private var contentHeight: CGFloat = 340   // 內部內容量測高度（不含導覽列）
 
     var body: some View {
         @Bindable var profileStore = profileStore
@@ -29,7 +31,17 @@ struct ProfileView: View {
                         }
                     }
                 } header: {
-                    Text("我的條件")
+                    HStack(spacing: 6) {
+                        Text("我的條件")
+                        Button {
+                            showExplanation = true
+                        } label: {
+                            Label("適配度說明", systemImage: "info.circle")
+                                .labelStyle(.iconOnly)
+                        }
+                        .buttonStyle(.borderless)
+                        Spacer()
+                    }
                 } footer: {
                     Text("填寫後，探索頁可依適配度為你排序，詳情頁也會給 AI 判讀。資料只存在本機。")
                 }
@@ -55,6 +67,29 @@ struct ProfileView: View {
                 .foregroundStyle(.secondary)
             }
             .navigationTitle("我的")
+            .sheet(isPresented: $showExplanation) {
+                NavigationStack {
+                    ScrollView {
+                        MatchExplanationView()
+                            .padding()
+                            .onGeometryChange(for: CGFloat.self) { proxy in
+                                proxy.size.height
+                            } action: { newValue in
+                                contentHeight = newValue
+                            }
+                    }
+                    .navigationTitle("適配度說明")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("完成") { showExplanation = false }
+                        }
+                    }
+                }
+                // 內容高度 + 導覽列（約 60pt）→ 貼合；ScrollView 保底避免估太緊被裁切
+                .presentationDetents([.height(contentHeight + 60)])
+                .presentationDragIndicator(.visible)
+            }
         }
     }
 }
