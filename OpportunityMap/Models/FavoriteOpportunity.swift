@@ -8,6 +8,8 @@ final class FavoriteOpportunity {
     var title: String
     var category: String
     var savedAt: Date
+    var isPinned: Bool = false      // 釘選置頂
+    var pinnedAt: Date? = nil       // 釘選時間（釘選區內用來排序）
 
     init(id: String, title: String, category: String, savedAt: Date = .now) {
         self.id = id
