@@ -25,7 +25,7 @@ jobs:
 
       - name: 抓取並合併資料
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 需在 repo Settings → Secrets 設定
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 需在 repo Settings → Secrets 設定
         run: python pipeline/extract.py
 
       - name: 有變更才 commit
