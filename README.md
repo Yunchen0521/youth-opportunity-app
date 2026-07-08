@@ -1,111 +1,345 @@
 # 青機會 · Youth Opportunity
 
-| Onboarding | Explore | Detail · AI read | Favorites | Profile |
-|:--:|:--:|:--:|:--:|:--:|
-| <a href="docs/screenshots/onboarding.png"><img src="docs/screenshots/onboarding.png" width="150" alt="Onboarding"></a> | <a href="docs/screenshots/explore.png"><img src="docs/screenshots/explore.png" width="150" alt="Explore"></a> | <a href="docs/screenshots/detail.png"><img src="docs/screenshots/detail.png" width="150" alt="Detail with AI read"></a> | <a href="docs/screenshots/favorites.png"><img src="docs/screenshots/favorites.png" width="150" alt="Favorites"></a> | <a href="docs/screenshots/profile.png"><img src="docs/screenshots/profile.png" width="150" alt="Profile"></a> |
+|                                                       Onboarding                                                       |                                                    Explore                                                    |                                                     Detail · AI Advisor                                                    |                                                      Favorites                                                      |                                                    Profile                                                    |
+| :--------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+| <a href="docs/screenshots/onboarding.png"><img src="docs/screenshots/onboarding.png" width="150" alt="Onboarding"></a> | <a href="docs/screenshots/explore.png"><img src="docs/screenshots/explore.png" width="150" alt="Explore"></a> | <a href="docs/screenshots/detail.png"><img src="docs/screenshots/detail.png" width="150" alt="Detail with AI Advisor"></a> | <a href="docs/screenshots/favorites.png"><img src="docs/screenshots/favorites.png" width="150" alt="Favorites"></a> | <a href="docs/screenshots/profile.png"><img src="docs/screenshots/profile.png" width="150" alt="Profile"></a> |
 
-<sub>點任一截圖可放大 · Tap any screenshot to enlarge</sub>
+<sub>點擊圖片查看完整尺寸 · Click screenshots to enlarge</sub>
 
 **繁體中文 ｜ [English](#english)**
 
 ---
 
-## 繁體中文
+# 簡介
 
-一款 iOS App，幫台灣年輕人**發現**散落在數十個官方網站的補助、競賽、獎學金、實習與創業計畫，在本機依你的條件**配對**，再導流到官網申請。
+青機會是一款協助台灣青年探索各類發展機會的 iOS App。
 
-它是一個**發現／聚合**工具，不是申請入口：目標是在五分鐘內回答「**有哪些機會、哪些適合我**」，然後把你帶到官網。
+它整合散落在政府、基金會與企業網站上的補助、競賽、獎學金、實習與創業計畫，根據使用者條件進行個人化配對，並導向官方網站完成申請。
 
-> 以 SwiftUI + SwiftData 打造，含本機適配引擎、可選的 Claude AI 顧問，以及會自我更新的資料管線（Python + Gemini + GitHub Actions）。
+青機會定位為「探索與聚合工具」，而非申請平台。
 
-### 為什麼做
+青機會希望解決兩個核心問題：
 
-台灣有上百個青年補助、競賽、獎學金與創業計畫，卻散落在數十個政府、基金會與企業網站，格式各異、資格常埋在 PDF 裡。很多年輕人錯過機會，只因為「不知道有」或「不確定自己符不符合」。
+> **有哪些機會？哪些適合我？**
 
-青機會把它們集中、結構化，並告訴你哪些真的適合你——讓「發現」只花五分鐘，而不是一整個下午的分頁地獄。
+透過資訊整合與個人化配對，幫助使用者快速找到符合自身條件的青年計畫。
 
-### 亮點功能
+---
 
-- **本機個人化配對** — 用確定性的引擎，依你的年齡／身分／地區為每個機會計分，標上適配徽章（`很適合 / 頗適合 / 可考慮`），完全離線、不需網路或 API。
-- **AI 顧問（選配）** — 每個機會一句「這適不適合我」的判讀，由 Claude 透過後端代理提供；離線時有 `MockAdvisor` 備援，App 隨時零成本可展示。
-- **自我更新的資料** — Python 管線抓取官網、用 LLM（Gemini 免費額度）結構化、去重，再透過 GitHub Actions 每日 commit 回 repo。App 開啟時抓最新資料，不需上架更新。
-- **SwiftData 收藏** — 釘選置頂、滑動操作，並顯示相同的適配徽章。
-- **截止提醒** — 截止前 3 天發本地通知。
-- **據點地圖** — 有實體地點的機會會顯示 MapKit 卡片，可用 Apple 或 Google 地圖開啟導航。
+# 為什麼做
 
-### 架構
+台灣有大量青年補助、競賽、獎學金與創業計畫，但資訊分散於不同政府機關、基金會與企業網站。
 
-三塊圍繞一份 JSON「資料庫」協作：
+許多機會並不是不存在，而是使用者不知道它們存在，或不知道自己是否符合資格。
+
+青機會希望透過資料整理、個人化推薦與 AI 輔助，降低資訊搜尋成本，讓探索機會變得更簡單。
+
+---
+
+# 功能亮點
+
+## 本機個人化配對
+
+依照使用者的：
+
+* 年齡
+* 身分
+* 地區
+
+透過本機 Matching Engine 計算適配程度，並顯示：
+
+* 很適合
+* 頗適合
+* 可考慮
+
+所有推薦運算皆在裝置端完成：
+
+* 不需要 API
+* 無需網路
+* 即時完成
+
+---
+
+## AI Advisor
+
+提供每個機會的 AI 輔助分析：
+
+> 「這個計畫適合我嗎？」
+
+AI Advisor 使用 Claude API，並透過 Cloudflare Worker 保護 API Key。
+
+同時提供離線模式：
+
+* `BackendAdvisor`：連接 Claude AI
+* `MockAdvisor`：使用本地資料產生分析
+
+即使沒有 API Key，App 仍可完整展示。
+
+---
+
+## 自動更新資料管線
+
+建立 Python 自動化 Pipeline：
+
+1. 抓取官方網站資料
+2. 使用 LLM 進行結構化整理
+3. 移除重複資料
+4. 更新 JSON 資料庫
+5. GitHub Actions 每日自動執行
+
+App 啟動時取得最新資料，不需要等待 App Store 更新。
+
+---
+
+## 收藏與提醒
+
+支援：
+
+* SwiftData 收藏管理
+* 收藏置頂
+* 滑動操作
+* 截止日前 3 天本地通知提醒
+
+---
+
+## 地圖整合
+
+具有實體地點的計畫會顯示 MapKit 卡片：
+
+* 查看位置
+* 開啟 Apple Maps
+* 開啟 Google Maps
+
+---
+
+# Architecture
+
+青機會由三個主要部分組成：
 
 ```mermaid
 flowchart TD
-    subgraph app["iOS App（SwiftUI）"]
-        E[探索 / 收藏 / 我的]
-        M["MatchEngine<br/>本機適配計分"]
-        A["OpportunityAdvisor<br/>協定"]
+    subgraph app["iOS App (SwiftUI)"]
+        E[Explore / Favorites / Profile]
+        M["MatchEngine<br/>on-device scoring"]
+        A["OpportunityAdvisor<br/>protocol"]
     end
-    subgraph backend["AI 顧問後端"]
-        W["Cloudflare Worker<br/>（金鑰留在伺服器）"]
-        C["Claude Messages API"]
+    subgraph backend["AI Advisor Backend"]
+        W["Cloudflare Worker<br/>(keeps API key server-side)"]
+        C["Claude / Messages API"]
     end
-    subgraph pipeline["資料管線（GitHub Actions，每日）"]
-        S[sources.json] --> X["extract.py<br/>抓取 + LLM 結構化 + 去重"]
+    subgraph pipeline["Data Pipeline (GitHub Actions, daily)"]
+        S[sources.json] --> X["extract.py<br/>scrape + LLM structure + de-dupe"]
     end
     DATA[("data/opportunities.json")]
+
     X --> DATA
-    DATA -->|開啟時抓取| E
+    DATA -->|fetched on launch| E
     E --> M
-    A -->|這個適合我嗎？| W --> C
+    A -->|"is this for me?"| W --> C
 ```
-
-- **① iOS App（MVVM + `@Observable`）** — 資料單向流動：遠端 JSON → `OpportunityService`（抓遠端、失敗回退內建）→ `OpportunityStore`（持有資料／搜尋／篩選）→ 各畫面。
-- **② 本機配對** — `MatchEngine.evaluate` 是純函式、確定性：底分 + 年齡硬門檻 + 身分／地區加權 → 適配等級。在本機跑，所以即時、免費、離線可用；網路只用來「更新資料」，不用來「排序」。
-- **③ AI 顧問（可抽換）** — `OpportunityAdvisor` 協定有兩種實作：`BackendAdvisor` 打 Cloudflare Worker 代理到 Claude（金鑰不進 App）；`MockAdvisor` 離線用真實資料組句，零成本。`Advisors.default` 自動選擇。
-- **④ 資料管線** — `extract.py` 讀 `sources.json`、逐一抓取、交給 LLM 結構化、**依標題去重**（只加新的、不覆蓋手工策展），寫回 `data/opportunities.json`；GitHub Actions 每日跑並自動 commit。LLM 呼叫集中在 `llm_extract` 一個函式，供應商（Gemini / GPT / Claude）可一處抽換。
-
-### 技術棧
-
-| 範圍 | 技術 |
-| --- | --- |
-| App | Swift、SwiftUI、SwiftData、MapKit、`@Observable`、UserNotifications、Google Mobile Ads (AdMob) |
-| AI 顧問 | Claude Messages API（經 Cloudflare Worker 代理） |
-| 資料管線 | Python（`requests`、`BeautifulSoup`、`google-genai`）、GitHub Actions |
-| 目標平台 | iOS 18+、Xcode 16 |
-
-### 專案結構
-
-```
-OpportunityMap/            # iOS App（Xcode 16 資料夾同步）
-├── Models/                # Opportunity、UserProfile + MatchEngine、FavoriteOpportunity
-├── ViewModels/            # OpportunityStore、ProfileStore、AppRouter（@Observable）
-├── Services/              # OpportunityService、RecommendationService、ReminderService
-├── Views/                 # 探索、詳情、收藏、我的、Onboarding
-└── Utilities/             # 樣式輔助
-data/opportunities.json    # App 抓取的「資料庫」
-pipeline/                  # extract.py、sources.json（抓取 → LLM → 去重）
-backend/worker.js          # Cloudflare Worker（Claude 代理）
-.github/workflows/         # 每日資料更新自動化
-```
-
-### 執行方式
-
-1. 用 Xcode 16（iOS 18 SDK）開啟 `OpportunityMap.xcodeproj`。
-2. 若提示，解析 Swift Package 相依（Google Mobile Ads）。
-3. 在 iOS 18 模擬器上 build & run。
-
-不需任何金鑰即可執行：AI 顧問預設走 `MockAdvisor`，廣告用 Google 官方**測試** ID。
-
-### 狀態
-
-核心已完成：發現、本機配對、AI 顧問層、收藏、提醒、據點地圖、Onboarding、每日自我更新的資料管線（已上線）。Roadmap：補齊截止日／金額、擴充來源、部署正式 Claude 後端做即時 AI demo。
-
-### 免責聲明
-
-本 App 聚合並導流至公開的青年計畫。所有資格與截止日以各計畫官方公告為準——申請前請務必至官網確認。
-
-<br>
 
 ---
+
+# 技術架構
+
+## iOS App (MVVM + @Observable)
+
+資料流程：
+
+```
+Remote JSON
+    ↓
+OpportunityService
+    ↓
+OpportunityStore
+    ↓
+SwiftUI Views
+```
+
+主要模組：
+
+### Models
+
+* `Opportunity`
+* `UserProfile`
+* `MatchEngine`
+* `FavoriteOpportunity`
+
+### Stores
+
+* `OpportunityStore`
+* `ProfileStore`
+* `AppRouter`
+
+### Services
+
+* `OpportunityService`
+* `RecommendationService`
+* `ReminderService`
+
+---
+
+# On-device Matching Engine
+
+`MatchEngine.evaluate()` 採用純函式設計。
+
+計算流程：
+
+```
+Base Score
+    +
+Age Requirement Check
+    +
+Identity / Region Weight
+    ↓
+Match Level
+```
+
+由於所有推薦邏輯在裝置端執行：
+
+* 運算快速
+* 無額外 API 成本
+* 支援離線使用
+
+---
+
+# AI Advisor Design
+
+透過 Protocol 抽象 AI 功能：
+
+```swift
+protocol OpportunityAdvisor {
+    func analyze(_ opportunity: Opportunity) async throws -> String
+}
+```
+
+實作：
+
+### BackendAdvisor
+
+```
+iOS App
+   ↓
+Cloudflare Worker
+   ↓
+Claude Messages API
+```
+
+API Key 不會存在 App 內。
+
+---
+
+### MockAdvisor
+
+離線模式：
+
+* 使用真實資料
+* 自動生成建議
+* 不需要 API
+
+---
+
+# Tech Stack
+
+| Area          | Technology                        |
+| ------------- | --------------------------------- |
+| iOS           | Swift, SwiftUI, SwiftData, MapKit |
+| Architecture  | MVVM, Observation Framework       |
+| AI            | Claude Messages API               |
+| Backend Proxy | Cloudflare Workers                |
+| Data Pipeline | Python, BeautifulSoup, Gemini     |
+| Automation    | GitHub Actions                    |
+| Notification  | UserNotifications                 |
+| Ads           | Google Mobile Ads                 |
+| Target        | iOS 18+, Xcode 16                 |
+
+---
+
+# 專案架構
+
+```
+OpportunityMap/
+├── Models/
+│   └── Opportunity, UserProfile, MatchEngine
+│
+├── ViewModels/
+│   └── OpportunityStore, ProfileStore
+│
+├── Services/
+│   └── Data, AI, Notification Services
+│
+├── Views/
+│   └── Explore, Detail, Favorites, Profile
+│
+data/
+└── opportunities.json
+
+pipeline/
+└── extract.py
+
+backend/
+└── worker.js
+
+.github/
+└── workflows/
+```
+
+---
+
+# 執行方式
+
+1. Open:
+
+```
+OpportunityMap.xcodeproj
+```
+
+with Xcode 16.
+
+2. Build and run on:
+
+```
+iOS 18 Simulator
+```
+
+No API keys are required.
+
+Default behavior:
+
+* AI Advisor → `MockAdvisor`
+* Ads → Google Test IDs
+
+---
+
+# 專案狀態
+
+目前已完成：
+
+✅ Opportunity Discovery<br>
+✅ Personalized Matching<br>
+✅ AI Advisor Layer<br>
+✅ Favorites<br>
+✅ Deadline Reminder<br>
+✅ Map Integration<br>
+✅ Automated Data Pipeline
+
+未來改善:
+
+* 增加更多官方資料來源
+* 補充截止日期與補助金額資訊
+* 部署正式 Claude Backend
+* 優化推薦模型
+
+---
+
+# 免責聲明
+
+青機會僅提供公開青年計畫資訊整理與導流。
+
+所有資格條件與截止日期，請以各計畫官方公告為準。
+
+申請前請務必至官方網站確認最新資訊。
+
 ---
 
 <br>
