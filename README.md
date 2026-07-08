@@ -344,11 +344,15 @@ Default behavior:
 
 <br>
 
-## English
+# About Youth Opportunity
 
-An iOS app that helps young people in Taiwan **discover** grants, competitions, scholarships, internships and startup programs scattered across dozens of official sites — then **matches** each opportunity to them on-device and hands off to the official site to apply.
+An iOS app that helps young people in Taiwan discover grants, competitions, scholarships, internships, and startup programs from various official sources.
 
-It is a **discovery / aggregator** app, not an application portal: its job is to answer *"what opportunities exist, and which ones fit me?"* in five minutes, then link out.
+The app matches opportunities based on user profiles and redirects users to official websites for application.
+
+It is a discovery and aggregation platform, not an application portal.
+
+Its goal is to answer *"what opportunities exist, and which ones fit me?"* in five minutes, then link out.
 
 > Built with SwiftUI + SwiftData, an on-device eligibility-matching engine, an optional Claude-powered advisor, and a self-updating data pipeline (Python + Gemini + GitHub Actions).
 
@@ -356,13 +360,13 @@ It is a **discovery / aggregator** app, not an application portal: its job is to
 
 Taiwan runs hundreds of youth grants, competitions, scholarships and startup programs — but they're scattered across dozens of government, foundation and corporate sites, each with its own format and eligibility often buried in PDFs. Many young people miss opportunities simply because they never knew they existed, or couldn't tell whether they qualified.
 
-青機會 pulls them into one place, structures them, and shows you which ones actually fit — so discovery takes five minutes, not an afternoon of tab-hopping.
+Youth Opportunity brings them together in one place, structures the information, and shows users which opportunities actually fit them — so discovering opportunities takes five minutes instead of spending hours searching across multiple websites.
 
 ### Highlights
 
 - **On-device personalized matching** — a deterministic engine scores every opportunity against the user's age / identity / region and shows a fit badge (`很適合 / 頗適合 / 可考慮`), fully offline, no network or API needed.
-- **AI advisor (optional)** — a per-opportunity *"is this for me?"* read powered by Claude through a backend proxy, with an offline `MockAdvisor` fallback so the app is always demoable at zero cost.
-- **Self-updating data** — a Python pipeline scrapes official sites, uses an LLM (Gemini free tier) to structure them, de-dupes, and commits back to the repo daily via GitHub Actions. The app pulls the latest data on launch — no App Store update required.
+- **AI Advisor (optional)** — a per-opportunity *"is this for me?"* read powered by Claude through a backend proxy, with an offline `MockAdvisor` fallback so the app is always demoable at zero cost.
+- **Self-updating data pipeline** - A Python pipeline automatically collects data from official websites, uses LLM-based extraction, removes duplicates, and updates the JSON database through GitHub Actions.
 - **Favorites with SwiftData** — pin-to-top, swipe actions, and the same fit badges.
 - **Deadline reminders** — local notifications scheduled 3 days before a deadline.
 - **Venue map** — opportunities with a physical location show a MapKit card that opens in Apple or Google Maps.
@@ -395,7 +399,7 @@ flowchart TD
 
 - **iOS App (MVVM + `@Observable`)** — data flows one way: remote JSON → `OpportunityService` (fetch remote, fall back to bundled) → `OpportunityStore` (data, search, filters) → the views.
 - **On-device matching** — `MatchEngine.evaluate` is pure and deterministic: base score, hard age gate, weighted identity/region bonuses → a fit level. It runs locally, so it's instant, free, and offline — the network only *refreshes the data*, never *ranks* it.
-- **AI advisor (pluggable)** — `OpportunityAdvisor` has two implementations: `BackendAdvisor` calls a Cloudflare Worker that proxies to Claude (key never in the app); `MockAdvisor` composes a read from the real data, offline, no API. `Advisors.default` auto-selects.
+- **AI Advisor (pluggable)** — `OpportunityAdvisor` has two implementations: `BackendAdvisor` calls a Cloudflare Worker that proxies to Claude (The API key is never shipped with the app.); `MockAdvisor` composes a read from the real data, offline, no API. `Advisors.default` auto-selects.
 - **Data pipeline** — `extract.py` reads `sources.json`, scrapes each site, sends the text to an LLM for structured extraction, **de-dupes against the curated data** (only adds new items), and writes back to `data/opportunities.json`; GitHub Actions runs it daily and commits changes. The LLM call is isolated in one function (`llm_extract`) so the provider can be swapped in one place.
 
 ### Tech Stack
@@ -403,7 +407,7 @@ flowchart TD
 | Area | Tech |
 | --- | --- |
 | App | Swift, SwiftUI, SwiftData, MapKit, `@Observable`, UserNotifications, Google Mobile Ads (AdMob) |
-| AI advisor | Claude Messages API via a Cloudflare Worker proxy |
+| AI Advisor | Claude Messages API via a Cloudflare Worker proxy |
 | Data pipeline | Python (`requests`, `BeautifulSoup`, `google-genai`), GitHub Actions |
 | Target | iOS 18+, Xcode 16 |
 
@@ -428,11 +432,11 @@ backend/worker.js          # Cloudflare Worker (Claude proxy)
 2. Resolve the Swift Package dependency (Google Mobile Ads) if prompted.
 3. Build & run on an iOS 18 simulator.
 
-No keys required to run: the AI advisor defaults to `MockAdvisor`, and ads use Google's public **test** IDs.
+No keys required to run: the AI Advisor defaults to `MockAdvisor`, and ads use Google's public **test** IDs.
 
 ### Status
 
-Core app complete: discovery, on-device matching, AI advisor layer, favorites, reminders, venue maps, onboarding, self-updating data pipeline (live, daily). Roadmap: enrich deadlines/amounts, expand sources, deploy the real Claude backend for a live AI demo.
+Core app complete: discovery, on-device matching, AI Advisor layer, favorites, reminders, venue maps, onboarding, self-updating data pipeline (live, daily). Roadmap: enrich deadlines/amounts, expand sources, deploy the real Claude backend for a live AI demo.
 
 ### Disclaimer
 
