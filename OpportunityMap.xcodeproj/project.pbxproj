@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4C656D2D2FFDE6120036388B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 4C656D2C2FFDE6120036388B /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4C7287D42FCFE456004DB840 /* OpportunityMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpportunityMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -13,16 +17,30 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4C7287D62FCFE456004DB840 /* OpportunityMap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4C656D2E2FFDE6120036388B /* Exceptions for "OpportunityMap" folder in "OpportunityMap" target */,
+			);
 			path = OpportunityMap;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4C656D2E2FFDE6120036388B /* Exceptions for "OpportunityMap" folder in "OpportunityMap" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4C7287D32FCFE456004DB840 /* OpportunityMap */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C7287D12FCFE456004DB840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C656D2D2FFDE6120036388B /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = OpportunityMap;
 			packageProductDependencies = (
+				4C656D2C2FFDE6120036388B /* GoogleMobileAds */,
 			);
 			productName = OpportunityMap;
 			productReference = 4C7287D42FCFE456004DB840 /* OpportunityMap.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 4C7287CB2FCFE456004DB840;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4C656D2B2FFDE6120036388B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C7287D52FCFE456004DB840 /* Products */;
 			projectDirPath = "";
@@ -257,6 +279,7 @@
 				DEVELOPMENT_TEAM = 5R2KZKB88T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpportunityMap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "青機會";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -291,6 +314,7 @@
 				DEVELOPMENT_TEAM = 5R2KZKB88T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpportunityMap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "青機會";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -336,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C656D2B2FFDE6120036388B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C656D2C2FFDE6120036388B /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C656D2B2FFDE6120036388B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C7287CC2FCFE456004DB840 /* Project object */;
 }

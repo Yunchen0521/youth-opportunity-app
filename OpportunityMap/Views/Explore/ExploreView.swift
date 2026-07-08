@@ -39,6 +39,7 @@ struct ExploreView: View {
         NavigationStack {
             
             
+            VStack(spacing: 0) {
             Group {
                 if store.isLoading {
                     ProgressView("載入中…")
@@ -50,6 +51,11 @@ struct ExploreView: View {
                 } else {
                     listContent
                 }
+            }
+
+            BannerAdView()
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
             }
             .navigationTitle("探索機會")
             .searchable(text: $store.searchText, prompt: "搜尋計畫、主辦單位、關鍵字")
