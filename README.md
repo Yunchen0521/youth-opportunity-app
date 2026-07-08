@@ -6,10 +6,11 @@ It is a **discovery / aggregator** app, not an application portal: its job is to
 
 > Built with SwiftUI + SwiftData, an on-device eligibility-matching engine, an optional Claude-powered advisor, and a self-updating data pipeline (Python + Gemini + GitHub Actions).
 
-<p align="center">
-  <a href="docs/screenshots/explore.png"><img src="docs/screenshots/explore.png" width="230" alt="Explore"></a>
-</p>
-<p align="center"><sub>▲ Tap a screenshot to enlarge</sub></p>
+| Explore + fit badges | Detail + AI read | Favorites | Profile |
+|:--:|:--:|:--:|:--:|
+| <a href="docs/screenshots/explore.png"><img src="docs/screenshots/explore.png" width="185" alt="Explore"></a> | <a href="docs/screenshots/detail.png"><img src="docs/screenshots/detail.png" width="185" alt="Detail with AI read"></a> | <a href="docs/screenshots/favorites.png"><img src="docs/screenshots/favorites.png" width="185" alt="Favorites"></a> | <a href="docs/screenshots/profile.png"><img src="docs/screenshots/profile.png" width="185" alt="Profile"></a> |
+
+<sub>Tap any screenshot to view full size.</sub>
 
 ---
 
