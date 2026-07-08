@@ -51,7 +51,7 @@ struct OnboardingView: View {
 
             VStack(alignment: .leading, spacing: 18) {
                 featureRow("square.grid.2x2", "探索與篩選", "補助、競賽、實習、獎學金一次搜")
-                featureRow("map", "地圖找據點", "看看你附近有哪些實體機會")
+                featureRow("bell", "收藏與提醒", "收藏有興趣的，截止前自動提醒")
                 featureRow("sparkles", "AI 為你推薦", "依你的條件排序，並判讀適不適合")
             }
             .padding(.horizontal, 12)

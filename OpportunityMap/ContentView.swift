@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  青機會 — 根 TabBar（列表優先，地圖輔助）
+//  青機會 — 根 TabBar（探索 / 收藏 / 我的）
 //
 
 import SwiftData
