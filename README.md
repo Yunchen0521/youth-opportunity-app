@@ -14,6 +14,14 @@ It is a **discovery / aggregator** app, not an application portal: its job is to
 
 ---
 
+## Why it exists
+
+Taiwan runs hundreds of youth grants, competitions, scholarships and startup programs — but they're scattered across dozens of government, foundation and corporate sites, each with its own format and eligibility often buried in PDFs. Many young people miss opportunities simply because they never knew they existed, or couldn't tell whether they qualified.
+
+青機會 pulls them into one place, structures them, and shows you which ones actually fit — so discovery takes five minutes, not an afternoon of tab-hopping.
+
+---
+
 ## Highlights
 
 - **On-device personalized matching** — a deterministic engine scores every opportunity against the user’s age / identity / region and shows a fit badge (`很適合 / 頗適合 / 可考慮`), fully offline, no network or API needed.
