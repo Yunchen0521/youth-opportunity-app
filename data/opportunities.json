@@ -1,6 +1,6 @@
 {
-  "version": "0.3.1",
-  "updatedAt": "2026-07-07",
+  "version": "0.3.2",
+  "updatedAt": "2026-07-08",
   "note": "資料以各官網最新簡章為準；deadline 為 null 者表示長期開放或年度徵件、日期逐年微調，請見 description。座標留空者由 App 以 address 即時定位。",
   "opportunities": [
     {
@@ -71,8 +71,8 @@
         ]
       },
       "amount": "每屆總額約 800 萬元（約 10 名得主分配）",
-      "deadline": null,
-      "applyStartDate": null,
+      "deadline": "2026-12-15",
+      "applyStartDate": "2026-10-15",
       "website": "https://www.keepwalkingfund.com.tw/",
       "location": null
     },
