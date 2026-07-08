@@ -191,6 +191,8 @@ struct OnboardingView: View {
                     .frame(maxWidth: .infinity, minHeight: 50)
             }
             .buttonStyle(.borderedProminent)
+            // 設定條件頁：至少填一項才能繼續；什麼都不想設就用下方「略過」。
+            .disabled(step == 1 && !profileStore.profile.hasCriteria)
 
             if step == 1 {
                 Button("略過，稍後再設定") { onFinish() }
@@ -205,7 +207,7 @@ struct OnboardingView: View {
     private var primaryButtonTitle: String {
         switch step {
         case 0: return "開始"
-        case 1: return profileStore.profile.hasCriteria ? "下一步" : "完成"
+        case 1: return "下一步"
         default: return "開始使用"
         }
     }
