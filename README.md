@@ -6,7 +6,10 @@ It is a **discovery / aggregator** app, not an application portal: its job is to
 
 > Built with SwiftUI + SwiftData, an on-device eligibility-matching engine, an optional Claude-powered advisor, and a self-updating data pipeline (Python + Gemini + GitHub Actions).
 
-![Explore](docs/screenshots/explore.png)
+<p align="center">
+  <a href="docs/screenshots/explore.png"><img src="docs/screenshots/explore.png" width="230" alt="Explore"></a>
+</p>
+<p align="center"><sub>▲ Tap a screenshot to enlarge</sub></p>
 
 ---
 
