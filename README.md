@@ -6,7 +6,7 @@
 
 <sub>點擊圖片查看完整尺寸 · Click screenshots to enlarge</sub>
 
-**繁體中文 ｜ [English](#about-youth-opportunity)**
+**[繁體中文](#簡介) ｜ [English](#about-youth-opportunity)**
 
 ---
 
