@@ -2,11 +2,11 @@
 
 |                                                       Onboarding                                                       |                                                    Explore                                                    |                                                     Detail · AI Advisor                                                    |                                                      Favorites                                                      |                                                    Profile                                                    |
 | :--------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-| <a href="docs/screenshots/onboarding-v2.png"><img src="docs/screenshots/onboarding-v2.png" width="150" alt="Onboarding"></a> | <a href="docs/screenshots/explore-v2.png"><img src="docs/screenshots/explore-v2.png" width="150" alt="Explore"></a> | <a href="docs/screenshots/detail-v2.png"><img src="docs/screenshots/detail-v2.png" width="150" alt="Detail with AI Advisor"></a> | <a href="docs/screenshots/favorites-v2.png"><img src="docs/screenshots/favorites-v2.png" width="150" alt="Favorites"></a> | <a href="docs/screenshots/profile-v2.png"><img src="docs/screenshots/profile-v2.png" width="150" alt="Profile"></a> |
+| <a href="docs/screenshots/onboarding-v2.png"><img src="docs/screenshots/onboarding-v2.png" width="150" alt="Onboarding"></a> | <a href="docs/screenshots/explore-v3.png"><img src="docs/screenshots/explore-v3.png" width="150" alt="Explore"></a> | <a href="docs/screenshots/detail-v2.png"><img src="docs/screenshots/detail-v2.png" width="150" alt="Detail with AI Advisor"></a> | <a href="docs/screenshots/favorites-v2.png"><img src="docs/screenshots/favorites-v2.png" width="150" alt="Favorites"></a> | <a href="docs/screenshots/profile-v2.png"><img src="docs/screenshots/profile-v2.png" width="150" alt="Profile"></a> |
 
 <sub>點擊圖片查看完整尺寸 · Click screenshots to enlarge</sub>
 
-**繁體中文 ｜ [English](#english)**
+**繁體中文 ｜ [English](#about-youth-opportunity)**
 
 ---
 
